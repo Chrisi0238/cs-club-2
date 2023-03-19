@@ -1,4 +1,3 @@
-//Das Programm funktioniert leider nicht so ganz..(siehe E-Mail)
 //globale Deklarationen 
 int green = 0;
 PFont f; // font deklarieren (Schriftart)
