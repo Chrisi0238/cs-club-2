@@ -1,0 +1,55 @@
+/**
+ * Balkendiagramm für int-Array, Zahlen werden aus CSV-Datei gelesen.
+ * 
+ * @author Wacker (teacher)
+ * @version 10.03.21
+ */
+//------------
+// TODO
+//------------
+
+ 
+ // Schriften
+PFont kleineSchrift;  
+PFont grosseSchrift;
+
+
+public void setup() {
+  // Zeichenfläche erzeugen
+  size(1000, 700);
+  background(0);
+  // Schriften laden
+  kleineSchrift = loadFont("KleineSchrift.vlw");
+  grosseSchrift = loadFont("GrosseSchrift.vlw");
+  
+  // CSV-Datei laden und anzeigen
+  ladeTabelle("punkte.csv");
+  zeichneBalken();
+}
+
+
+public void ladeTabelle(String name) {
+  // Tabelle aus CSV-Datei laden
+  Table csv = loadTable(name,"header,csv");
+  // Die Anzahl der gespeicherten Zeilen bekommt man mit csv.getRowCount()
+  //------------
+  // TODO
+  //------------
+
+  //------------
+  // TODO
+  //------------  
+}
+  
+
+public void zeichneBalken() {
+
+  clear();
+  
+  // Überschrift
+  fill(255,255,255);
+  textFont(grosseSchrift);
+  text("Punkte", 2, 20);
+  textFont(kleineSchrift);  
+  
+}
